@@ -2,3 +2,5 @@
 .idea
 /venv/
 pycache
+__init__.py
+__pycache__
