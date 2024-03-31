@@ -10,14 +10,10 @@ def chrome():
     driver.quit()
 
 
-@pytest.fixture()
+@pytest.fixture(scope='class')
 def driver():
     driver = webdriver.Chrome()
     yield driver
     driver.quit()
 
-
-@pytest.fixture()
-def hello():
-    print("hello")
 
